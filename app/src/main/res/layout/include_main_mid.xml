@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginBottom="20px"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="关于我们"
+        android:textSize="18sp"
+        android:textColor="#ea644a"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dbdbdb" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="沈阳逐日科技有限公司( www.web024.cn )成立于2002年，是一家拥有一批专业、忠诚、勤奋、敬业的经营人才的高科技企业，公司自成立以来始终以诚信、高效、公平的原则为用户提供高质量的产品服务，帮助客户走向成功是逐日公司的工作职责。"
+            android:textSize="16sp"
+            android:paddingRight="15dp"/>
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:src="@drawable/iabout"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+
+</LinearLayout>

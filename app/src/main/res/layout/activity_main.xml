@@ -12,6 +12,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <include layout="@layout/include_main_pic" />
+            <include layout="@layout/include_main_mid" />
+            <include layout="@layout/include_main_newslist" />
+            <include layout="@layout/include_main_about" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
