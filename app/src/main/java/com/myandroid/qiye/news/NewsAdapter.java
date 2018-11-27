@@ -10,10 +10,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.myandroid.qiye.MainActivity;
 import com.myandroid.qiye.NewsViewActivity;
 import com.myandroid.qiye.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,6 +24,17 @@ import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     private List<News> mNewsList;
+    public Context mContext;
+/*
+    public NewsAdapter(List<News> newsList){
+        mNewsList = newsList;
+    }
+    */
+    public NewsAdapter(Context context,List<News> newList){
+        mContext = context;
+        mNewsList = newList;
+    }
+
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         View newsView;
@@ -37,9 +50,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         }
     }
 
-    public NewsAdapter(List<News> newsList){
-        mNewsList = newsList;
-    }
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -70,7 +81,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         News news = mNewsList.get(position);
         holder.newsTitle.setText(news.getTitle());
-        holder.newsPic.setImageResource(news.getImageId());
+        //Glide.with(mContext).load(mBirdsList.get(position).getImageUrl()).into(holder.imageView);
+        Glide.with(mContext).load(news.getImageurl()).into(holder.newsPic);
+        //holder.newsPic.setImageResource(news.getImageId());
     }
 
     @Override

@@ -18,6 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
+                android:src="@drawable/slider1"
                 android:adjustViewBounds="true"/>
             <TextView
                 android:id="@+id/view_news_title"
@@ -25,6 +26,16 @@
                 android:layout_height="wrap_content"
                 android:padding="15dp"
                 android:textSize="20sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dbdbdb" />
+            <TextView
+                android:id="@+id/view_news_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textSize="16sp"/>
 
         </LinearLayout>
     </ScrollView>
