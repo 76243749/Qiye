@@ -9,14 +9,7 @@
         android:layout_height="match_parent"
         android:src="@drawable/defaults"
         android:scaleType="fitXY"/>
-    <RadioGroup
-        android:id="@+id/rg_indicate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="bottom|center"
-        android:paddingBottom="20dp"/>
+
     <Button
         android:id="@+id/btn_goindex"
         android:layout_width="wrap_content"
@@ -25,8 +18,7 @@
         android:textColor="#ea644a"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
-        android:background="#ffffff"
-        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
         />
 </RelativeLayout>
