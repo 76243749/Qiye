@@ -1,5 +1,6 @@
 package com.myandroid.qiye;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v7.app.AlertDialog;
@@ -9,13 +10,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MemberActivity extends AppCompatActivity {
+public class MemberActivity extends AppCompatActivity implements View.OnClickListener {
     private GridView memberGridView;
     private List<Map<String, Object>> dataList;
     private SimpleAdapter adapter;
@@ -46,6 +48,19 @@ public class MemberActivity extends AppCompatActivity {
             }
         });
 
+        TextView mBtnEdit = (TextView) findViewById(R.id.member_index_btn_edit);
+        mBtnEdit.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.member_index_btn_edit:
+                Intent intent1 = new Intent(this,MemberEditActivity.class);
+                startActivity(intent1);
+                break;
+        }
     }
 
     private void initgrid() {

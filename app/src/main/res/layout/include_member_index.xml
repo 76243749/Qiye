@@ -83,6 +83,7 @@
             android:layout_height="1px"
             android:background="#dbdbdb" />
         <RelativeLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp">
@@ -92,6 +93,7 @@
                 android:layout_height="20dp"
                 android:src="@drawable/ico_setting"/>
             <TextView
+                android:id="@+id/member_index_btn_edit"
                 android:layout_toRightOf="@+id/member_ico_2"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
@@ -108,6 +110,7 @@
             android:layout_height="1px"
             android:background="#dbdbdb" />
         <RelativeLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp">
