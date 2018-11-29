@@ -26,7 +26,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".NewsListActivity"></activity>
+        <activity android:name=".NewsListActivity" />
+        <activity android:name=".MemberActivity"></activity>
     </application>
 
 </manifest>

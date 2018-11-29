@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private List<News> newsList = new ArrayList<>();
     private RecyclerView newsListRecycler;
     private TextView newsMore;
+    private TextView btnGoMember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         newsListRecycler.setAdapter(adapter);
         */
         newsMore.setOnClickListener(this);
+
+        btnGoMember = (TextView) findViewById(R.id.btn_gomember);
+        btnGoMember.setOnClickListener(this);
     }
 
     @Override
@@ -83,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.news_more:
                 Intent intent = new Intent(MainActivity.this,NewsListActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btn_gomember:
+                Intent intent1 = new Intent(MainActivity.this,MemberActivity.class);
+                startActivity(intent1);
                 break;
         }
     }

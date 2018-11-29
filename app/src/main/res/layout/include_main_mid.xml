@@ -6,14 +6,27 @@
     android:background="#ffffff"
     android:layout_marginBottom="20px"
     >
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:text="关于我们"
-        android:textSize="18sp"
-        android:textColor="#ea644a"/>
-
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="关于我们"
+            android:textSize="18sp"
+            android:textColor="#ea644a"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/btn_gomember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="会员中心"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
